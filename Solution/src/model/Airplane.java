@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Airplane {
     private String id;
-    private Trip currentTrip;
     private int capacity;
     private List<Seat> seats;
 
@@ -24,14 +23,6 @@ public class Airplane {
         this.id = id;
     }
 
-    public Trip getCurrentTrip() {
-        return currentTrip;
-    }
-
-    public void setCurrentTrip(Trip currentTrip) {
-        this.currentTrip = currentTrip;
-    }
-
     public int getCapacity() {
         return capacity;
     }
@@ -46,5 +37,13 @@ public class Airplane {
 
     public void setSeats(List<Seat> seats) {
         this.seats = seats;
+    }
+
+    @Override
+    public String toString() {
+        return "Airplane{" +
+                "seats=" + seats.toString() +
+                ", capacity=" + capacity +
+                '}';
     }
 }

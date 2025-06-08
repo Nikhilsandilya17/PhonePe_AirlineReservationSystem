@@ -1,5 +1,7 @@
 package service;
 
+import model.User;
+
 public interface UserService {
-    void registerUser(String username, String email);
+    User registerUser(String username, String email);
 }

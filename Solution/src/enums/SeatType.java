@@ -1,17 +1,17 @@
 package enums;
 
 public enum SeatType {
-    ECONOMY(2),
-    BUSINESS(3),
-    PASSENGER(1);
+    ECONOMY(3),
+    BUSINESS(2),
+    PASSENGER(5);
 
-    private final int fareMultiplier;
+    private final int countOfSeats;
 
-    SeatType(int fareMultiplier) {
-        this.fareMultiplier = fareMultiplier;
+    SeatType(int countOfSeats) {
+        this.countOfSeats = countOfSeats;
     }
 
-    public int getFareMultiplier() {
-        return fareMultiplier;
+    public int getCountOfSeats() {
+        return countOfSeats;
     }
 }
